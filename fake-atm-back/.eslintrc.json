@@ -16,10 +16,20 @@
     ],
     "rules": {
         "import/extensions": [
-    "error",
-    {
+        "error",
+         {
         "js": "ignorePackages"
-    }
-   ]
-}
+        }
+        ],
+        "no-nested-ternary": "off",
+        "import/prefer-default-export": "off",
+        "prefer-template":"off"
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        }
+      }
 }

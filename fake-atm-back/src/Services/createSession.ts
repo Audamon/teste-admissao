@@ -6,7 +6,7 @@ import { Users } from '../Interfaces/UserInterface';
 export async function createSession(user: Users) {
   const token = uuid();
   const data = {
-    user,
+    idUser: user.id,
     token,
   };
   const session = await AppDataSource.getRepository(SessionsEntity).create(

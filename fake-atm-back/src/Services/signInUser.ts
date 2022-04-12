@@ -9,6 +9,7 @@ export async function signInUser(
   cpf: string,
 ): Promise<SessionsEntity> {
   const user = await AppDataSource.manager.findOneBy(UserEntity, { cpf });
+  console.log(user);
   const checkedPassword = await checkPasswordService.checkPassword(
     password,
     user.encryptedPassword,

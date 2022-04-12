@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 import { Token } from '../Interfaces/TokenInterface';
 
-@Entity('sessions')
+@Entity('session')
 export default class SessionsEntity implements Token {
   @PrimaryGeneratedColumn()
     id: number;

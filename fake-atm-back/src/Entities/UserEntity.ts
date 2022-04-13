@@ -1,5 +1,8 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import {
+  Entity, PrimaryGeneratedColumn, Column, OneToMany,
+} from 'typeorm';
 import { Users } from '../Interfaces/UserInterface';
+import OperationEntity from './OperationEntity';
 
 @Entity('users')
 export default class UserEntity implements Users {
@@ -20,6 +23,9 @@ export default class UserEntity implements Users {
 
   @Column()
     encryptedPassword: string;
+
+  @OneToMany(() => OperationEntity, (operation) => operation.id)
+    operation: OperationEntity;
 
   getUser() {
     const obj = {

@@ -24,7 +24,8 @@
         "no-nested-ternary": "off",
         "import/prefer-default-export": "off",
         "prefer-template":"off",
-        "consistent-return": "off"
+        "consistent-return": "off",
+        "no-use-before-define": "off"
     },
     "settings": {
         "import/resolver": {

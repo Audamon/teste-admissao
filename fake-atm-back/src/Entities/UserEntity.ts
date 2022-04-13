@@ -21,7 +21,13 @@ export default class UserEntity implements Users {
   @Column()
     encryptedPassword: string;
 
-  getId() {
-    return this.id;
+  getUser() {
+    const obj = {
+      name: this.name,
+      adress: this.adress,
+      cpf: this.cpf,
+      birthday: this.birthday,
+    };
+    return obj;
   }
 }

@@ -9,6 +9,6 @@ O back foi estruturado com pastas para os controllers, services, entidades, inte
 Criei um projeto react padrão, comecei fazendo um componente `Header` para o nome da página, usei o `react-router-dom` para fazer as rotas da aplicação, implementei apenas o login.
 
 
-### `dentro das pastas do front e do back  tem outro README sobre como rodar o código;`
+### dentro das pastas do front e do back  tem outro README sobre como rodar o código;
 
-#### `Infelizmente por questões externas não pude concluir o teste`
+#### Infelizmente por questões externas não pude concluir o teste
